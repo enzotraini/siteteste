@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style_esqueci_senha.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <title>Esqueci Minha Senha</title>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <h1>Recuperar Senha</h1>
+            <div class="input-container">
+                <input type="email" placeholder="Digite seu email" required>
+                <img width="20" height="20" src="https://img.icons8.com/ios/50/email.png" alt="email-icon"/>
+            </div>
+            <button type="submit" class="submit-button">Enviar</button>
+            <div class="back-link">
+                <p><a href="{{ url_for('login') }}">Voltar para login</a></p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
